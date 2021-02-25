@@ -1,0 +1,14 @@
+:root {
+  --dark: #131313;
+  --yellow: #ffdd33;
+  --dark-gray: #858585;
+  --gray: #fefefe;
+  --orange: #ff4422;
+}
+
+body {
+  background: gray;
+}
+h1 {
+  color: green;
+}
