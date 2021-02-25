@@ -5,22 +5,16 @@
   --gray: #dad6d6;
   --orange: #ff4422;
 }
+html {
+  margin: 0;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-nav li {
-  list-style: none;
-  padding: 0 0.3rem;
-  font-size: 0.9rem;
-  color: var(--dark-gray);
-  font-weight: 500;
-}
-ul {
-  padding-left: 1rem;
-}
+/* Navbar */
 
 .nav-top-right:last-child {
   padding-right: 1rem;
@@ -66,4 +60,149 @@ ul {
 .nav-bottom p {
   display: inline-block;
   font-size: 0.8rem;
+}
+
+/* Banners */
+
+.banners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "b b s1"
+    "b b s2";
+  grid-gap: 1rem;
+  color: #fff;
+  margin: 1rem;
+}
+.banner-1 {
+  background: linear-gradient(
+      to bottom,
+      rgba(47, 48, 49, 0.726),
+      rgba(19, 3, 15, 0.73)
+    ),
+    url("../img/big\ banner.jpg");
+  grid-area: b;
+  height: 448px;
+  background-position: center;
+  background-size: cover;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.banner-heading-big {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+p,
+a {
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+}
+
+.banner-2 {
+  grid-area: s1;
+  background: linear-gradient(
+      to bottom,
+      rgba(47, 48, 49, 0.726),
+      rgba(19, 3, 15, 0.73)
+    ),
+    url("../img/header-image-bernie-sitting-meme-analysis-516x270.webp");
+  background-position: center;
+  background-size: cover;
+  height: 216px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.banner-3 {
+  grid-area: s2;
+  background: linear-gradient(
+      to bottom,
+      rgba(47, 48, 49, 0.726),
+      rgba(19, 3, 15, 0.73)
+    ),
+    url("../img/big\ banner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 216px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Latest news  */
+.latest {
+  margin: 8rem;
+}
+
+.grid-latest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.content-container h4 {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+}
+
+.img-container img {
+  height: 150px;
+}
+
+/* Latest deals */
+
+.latest-card-1 {
+}
+
+/* Footer */
+
+.footer-top {
+  height: 100px;
+  background: var(--dark);
+  padding: 1rem;
+}
+
+.footer-links-social,
+.footer-links-social-2 {
+  display: flex;
+  justify-content: center;
+
+  font-size: 1rem;
+}
+.footer-top > ul {
+  list-style: none;
+}
+
+.footer-top > ul.footer-links-social > li a {
+  font-size: 1rem;
+  color: var(--gray);
+  background: rgb(44, 44, 44);
+  border-radius: 100%;
+  margin: 5px;
+  padding: 0.7rem;
+}
+.footer-top > ul.footer-links-social-2 > li a {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+
+.footer-links-social-2 {
+  padding-top: 1rem;
+}
+
+.footer-bottom {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
 }

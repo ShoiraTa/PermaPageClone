@@ -1,8 +1,44 @@
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  padding: 0 0.3rem;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
 .orange {
   color: var(--orange);
 }
+
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+img-bg {
+  background-position: center;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+.section-heading {
+  font-size: 2rem;
+  color: var(--orange);
+  font-weight: 700;
 }

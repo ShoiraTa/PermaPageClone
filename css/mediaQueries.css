@@ -1,14 +1,91 @@
+@media (max-width: 1000px) {
+  .banner-1 {
+    height: 255px;
+  }
+  .banner-2 {
+    height: 120px;
+  }
+  .banner-3 {
+    height: 120px;
+  }
+  .banner-heading-big {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .banner-p .banner-p a {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 700px) {
   .fa-bars {
     display: inline-block;
     padding-left: 1rem;
   }
+
   nav .nav-top,
   .nav-middle-left .flex {
     display: none;
   }
+
   .nav-middle {
     width: 100%;
     display: flex;
   }
-} ;
+  .banners {
+    grid-template-areas: "b" "s1" "s2";
+    grid-template-columns: 1fr;
+  }
+
+  .banner-1 {
+    height: 100px;
+  }
+
+  .banner-1 p:first-child {
+    display: none;
+  }
+
+  .banner-2 {
+    height: 100px;
+  }
+
+  .banner-3 {
+    height: 100px;
+  }
+
+  .banner-1 .banner-heading-big {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .banner-p .banner-p a {
+    font-size: 10px;
+  }
+  .grid-latest {
+    grid-template-columns: 1fr;
+  }
+  .latest {
+    margin: 1rem;
+  }
+
+  .card-1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-container img {
+    width: 100px;
+    height: 80px;
+    margin-right: 0.5rem;
+  }
+  .content-container h4 {
+    font-size: 1rem;
+  }
+}
