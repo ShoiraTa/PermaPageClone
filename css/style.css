@@ -2,13 +2,68 @@
   --dark: #131313;
   --yellow: #ffdd33;
   --dark-gray: #858585;
-  --gray: #fefefe;
+  --gray: #dad6d6;
   --orange: #ff4422;
 }
-
 body {
-  background: gray;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-h1 {
-  color: green;
+
+nav li {
+  list-style: none;
+  padding: 0 0.3rem;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+ul {
+  padding-left: 1rem;
+}
+
+.nav-top-right:last-child {
+  padding-right: 1rem;
+}
+
+.nav-top,
+.nav-bottom {
+  display: fixed;
+}
+
+.nav-top {
+  height: 2.2rem;
+  background-color: var(--dark);
+}
+
+.nav-middle {
+  height: 3rem;
+}
+
+.icons {
+  color: var(--gray);
+  position: relative;
+  padding: 1rem;
+}
+
+.fa-bars {
+  display: none;
+}
+.nav-middle-right::before {
+  content: "";
+  width: 2px;
+  height: 3rem;
+  background: var(--gray);
+  position: absolute;
+  margin-right: 1rem;
+}
+
+.nav-bottom {
+  background: var(--yellow);
+  height: 2rem;
+  padding: 0 1.2rem;
+}
+.nav-bottom p {
+  display: inline-block;
+  font-size: 0.8rem;
 }
