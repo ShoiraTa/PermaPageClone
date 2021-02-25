@@ -18,6 +18,9 @@
   .banner-p .banner-p a {
     font-size: 10px;
   }
+  .funding-cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 700px) {
@@ -87,5 +90,19 @@
   }
   .content-container h4 {
     font-size: 1rem;
+  }
+  .funding-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .latest-funding {
+    margin: 1rem;
+  }
+
+  .funding-heading {
+    flex-direction: column;
+  }
+  .funding-heading-links {
+    flex-direction: row;
   }
 }
