@@ -2,24 +2,38 @@
   .banner-1 {
     height: 255px;
   }
+
   .banner-2 {
     height: 120px;
   }
+
   .banner-3 {
     height: 120px;
   }
+
   .banner-heading-big {
     font-size: 2rem;
     font-weight: 700;
   }
+
   h2 {
     font-size: 1rem;
   }
+
   .banner-p .banner-p a {
     font-size: 10px;
   }
-  .funding-cards {
+
+  .funding-cards,
+  .grid-latest,
+  .cards {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .hard-fork,
+  .latest,
+  .latest-funding {
+    margin: 1rem;
   }
 }
 
@@ -38,12 +52,15 @@
     width: 100%;
     display: flex;
   }
+
   .banners {
     grid-template-areas: "b" "s1" "s2";
     grid-template-columns: 1fr;
   }
 
-  .banner-1 {
+  .banner-1,
+  .banner-2,
+  .banner-3 {
     height: 100px;
   }
 
@@ -51,34 +68,22 @@
     display: none;
   }
 
-  .banner-2 {
-    height: 100px;
-  }
-
-  .banner-3 {
-    height: 100px;
-  }
-
   .banner-1 .banner-heading-big {
     font-size: 1rem;
     font-weight: 700;
   }
 
-  h2 {
+  h2,
+  .content-container h4 {
     font-size: 1rem;
   }
 
   .banner-p .banner-p a {
     font-size: 10px;
   }
-  .grid-latest {
-    grid-template-columns: 1fr;
-  }
-  .latest {
-    margin: 1rem;
-  }
 
-  .card-1 {
+  .card-1,
+  .funding-heading-links {
     display: flex;
     flex-direction: row;
   }
@@ -88,21 +93,20 @@
     height: 80px;
     margin-right: 0.5rem;
   }
-  .content-container h4 {
-    font-size: 1rem;
-  }
-  .funding-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .latest-funding {
-    margin: 1rem;
-  }
 
   .funding-heading {
     flex-direction: column;
   }
-  .funding-heading-links {
-    flex-direction: row;
+
+  .funding-cards,
+  .grid-latest,
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hard-fork,
+  .latest,
+  .latest-funding {
+    margin: 1rem;
   }
 }
