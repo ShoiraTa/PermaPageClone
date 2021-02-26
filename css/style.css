@@ -5,9 +5,11 @@
   --gray: #dad6d6;
   --orange: #ff4422;
 }
+
 html {
   margin: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -74,6 +76,7 @@ body {
   color: #fff;
   margin: 1rem;
 }
+
 .banner-1 {
   background: linear-gradient(
       to bottom,
@@ -90,6 +93,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
+
 .banner-heading-big {
   font-size: 3rem;
   font-weight: 700;
@@ -136,6 +140,7 @@ a {
 }
 
 /* Latest news  */
+
 .latest {
   margin: 8rem;
 }
@@ -161,8 +166,6 @@ a {
   position: relative;
 }
 
-/* Latest deals */
-
 /* Footer */
 
 .footer-top {
@@ -178,6 +181,7 @@ a {
 
   font-size: 1rem;
 }
+
 .footer-top > ul {
   list-style: none;
 }
@@ -190,6 +194,7 @@ a {
   margin: 5px;
   padding: 0.7rem;
 }
+
 .footer-top > ul.footer-links-social-2 > li a {
   padding: 0.5rem;
   font-size: 1rem;
@@ -214,16 +219,39 @@ a {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.funding-cards .funding-card {
+  position: relative;
+}
+
+.card-part1::before {
+  content: " ";
+  background-image: url("../img/ringover.webp");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .latest-funding {
   margin: 8rem;
 }
 
 .funding-heading-links .flex li {
   list-style: none;
-  padding: 10px;
-  border-right: solid 1px var(--orange);
-
+  padding: 20px;
   font-size: 1rem;
+  position: relative;
+}
+
+.funding-heading-links .flex li::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  top: 15px;
+  left: 0px;
+  background: var(--orange);
 }
 
 .funding-heading-links .flex li:last-child {
@@ -240,7 +268,9 @@ a {
   color: #fff;
   display: flex;
   align-items: center;
+  padding-right: 20px;
 }
+
 .card-part2 {
   background: #ffebe8;
   height: 50px;
@@ -254,7 +284,7 @@ a {
 .card-part2-heading-2,
 .card-part1 h3 {
   margin: 0;
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 .card-part2-heading {
   color: black;
@@ -262,6 +292,7 @@ a {
   font-size: 1rem;
   position: relative;
 }
+
 .card-part3 p i {
   color: black;
   padding: 3px 10px;
@@ -281,6 +312,7 @@ a {
 
 .dealDiscount div {
   transform: rotate(45deg);
+
   font-size: 14px;
   font-weight: 700;
   left: 8px;
@@ -289,7 +321,6 @@ a {
   text-transform: uppercase;
   top: 20px;
   width: 100%;
-  z-index: 1;
 }
 
 .dealDiscount {
@@ -298,7 +329,95 @@ a {
   width: 80px;
   top: 0;
   right: 0;
-  background-image: url(./img/deals-ribbon.svg);
+  background-image: url("../img/deals-ribbon.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+/* hard fork */
+
+.hard-fork {
+  margin: 8rem;
+}
+.cards {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fork-card-top {
+  height: 250px;
+  background: linear-gradient(
+      to bottom,
+      rgba(47, 48, 49, 0.726),
+      rgba(19, 3, 15, 0.73)
+    ),
+    url("../img/california-car-ev-hydrogen-future-electruc-fcev-ev-480x270.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+#card-heading > a {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.card-heading-p {
+  color: #fff;
+}
+
+.fork-card-mid {
+  display: flex;
+  background: wheat;
+  height: 80px;
+}
+
+.fork-mid-content {
+  margin: 15px;
+}
+
+.LATEST {
+  color: #ff4422;
+  margin: 0;
+}
+
+.fork-mid-content > .orange {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.img-container-fork {
+  height: 100%;
+  width: 150px;
+}
+
+.img-container-fork img {
+  height: 100%;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.fork-card-bot > ul > li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.fork-card-bot > ul > li {
+  color: var(--dark-gray);
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--gray);
+  padding: 10px 0;
 }
