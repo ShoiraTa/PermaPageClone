@@ -157,10 +157,11 @@ a {
   height: 150px;
 }
 
-/* Latest deals */
-
-.latest-card-1 {
+.img-container {
+  position: relative;
 }
+
+/* Latest deals */
 
 /* Footer */
 
@@ -205,4 +206,99 @@ a {
   justify-content: center;
   align-items: center;
   background: black;
+}
+
+/* LAtest Funding */
+.funding-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.latest-funding {
+  margin: 8rem;
+}
+
+.funding-heading-links .flex li {
+  list-style: none;
+  padding: 10px;
+  border-right: solid 1px var(--orange);
+
+  font-size: 1rem;
+}
+
+.funding-heading-links .flex li:last-child {
+  border: none;
+}
+
+.funding-card {
+  padding: 10px;
+}
+
+.card-part1 {
+  background: var(--orange);
+  height: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.card-part2 {
+  background: #ffebe8;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-part2-heading,
+.card-part2-heading-2,
+.card-part1 h3 {
+  margin: 0;
+  padding-left: 3rem;
+}
+.card-part2-heading {
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+.card-part3 p i {
+  color: black;
+  padding: 3px 10px;
+}
+
+.card-part3 {
+  border-bottom: solid 1px var(--orange);
+}
+
+.card-part4 {
+  line-height: 25px;
+}
+
+.card-part4 a {
+  color: rgb(192, 183, 183);
+}
+
+.dealDiscount div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+  z-index: 1;
+}
+
+.dealDiscount {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 0;
+  right: 0;
+  background-image: url(./img/deals-ribbon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
