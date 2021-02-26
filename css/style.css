@@ -1,9 +1,9 @@
 :root {
   --dark: #131313;
-  --yellow: #ffdd33;
+  --yellow: #fd3;
   --dark-gray: #858585;
   --gray: #dad6d6;
-  --orange: #ff4422;
+  --orange: #f42;
 }
 
 html {
@@ -20,11 +20,6 @@ body {
 
 .nav-top-right:last-child {
   padding-right: 1rem;
-}
-
-.nav-top,
-.nav-bottom {
-  display: fixed;
 }
 
 .nav-top {
@@ -45,6 +40,7 @@ body {
 .fa-bars {
   display: none;
 }
+
 .nav-middle-right::before {
   content: "";
   width: 2px;
@@ -59,6 +55,13 @@ body {
   height: 2rem;
   padding: 0 1.2rem;
 }
+
+p,
+a {
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+}
+
 .nav-bottom p {
   display: inline-block;
   font-size: 0.8rem;
@@ -78,7 +81,8 @@ body {
 }
 
 .banner-1 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom,
       rgba(47, 48, 49, 0.726),
       rgba(19, 3, 15, 0.73)
@@ -99,15 +103,10 @@ body {
   font-weight: 700;
 }
 
-p,
-a {
-  color: var(--dark-gray);
-  font-size: 0.8rem;
-}
-
 .banner-2 {
   grid-area: s1;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom,
       rgba(47, 48, 49, 0.726),
       rgba(19, 3, 15, 0.73)
@@ -124,7 +123,8 @@ a {
 
 .banner-3 {
   grid-area: s2;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom,
       rgba(47, 48, 49, 0.726),
       rgba(19, 3, 15, 0.73)
@@ -178,12 +178,37 @@ a {
 .footer-links-social-2 {
   display: flex;
   justify-content: center;
-
   font-size: 1rem;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
 }
 
 .footer-top > ul {
   list-style: none;
+}
+
+.card-part4 {
+  line-height: 25px;
+}
+
+.card-part4 a {
+  color: rgb(192, 183, 183);
+}
+
+.fork-card-bot > ul > li {
+  color: var(--dark-gray);
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--gray);
+  padding: 10px 0;
+}
+
+.fork-card-top > a:nth-child(2) {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .footer-top > ul.footer-links-social > li a {
@@ -219,6 +244,10 @@ a {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.funding-card {
+  padding: 10px;
+}
+
 .funding-cards .funding-card {
   position: relative;
 }
@@ -244,22 +273,27 @@ a {
   position: relative;
 }
 
+.fork-card-bot > ul > li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 .funding-heading-links .flex li::before {
   content: "";
   position: absolute;
   width: 1px;
   height: 30px;
   top: 15px;
-  left: 0px;
+  left: 0;
   background: var(--orange);
 }
 
 .funding-heading-links .flex li:last-child {
   border: none;
-}
-
-.funding-card {
-  padding: 10px;
 }
 
 .card-part1 {
@@ -286,6 +320,7 @@ a {
   margin: 0;
   padding-left: 4rem;
 }
+
 .card-part2-heading {
   color: black;
   font-weight: 700;
@@ -302,17 +337,8 @@ a {
   border-bottom: solid 1px var(--orange);
 }
 
-.card-part4 {
-  line-height: 25px;
-}
-
-.card-part4 a {
-  color: rgb(192, 183, 183);
-}
-
 .dealDiscount div {
   transform: rotate(45deg);
-
   font-size: 14px;
   font-weight: 700;
   left: 8px;
@@ -339,6 +365,7 @@ a {
 .hard-fork {
   margin: 8rem;
 }
+
 .cards {
   display: grid;
   grid-gap: 1rem;
@@ -347,7 +374,8 @@ a {
 
 .fork-card-top {
   height: 250px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       to bottom,
       rgba(47, 48, 49, 0.726),
       rgba(19, 3, 15, 0.73)
@@ -359,12 +387,6 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   padding: 15px;
-}
-
-#card-heading > a {
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 700;
 }
 
 .card-heading-p {
@@ -382,7 +404,7 @@ a {
 }
 
 .LATEST {
-  color: #ff4422;
+  color: #f42;
   margin: 0;
 }
 
@@ -399,25 +421,4 @@ a {
 
 .img-container-fork img {
   height: 100%;
-}
-
-ul {
-  list-style: none; /* Remove default bullets */
-}
-
-.fork-card-bot > ul > li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: red; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
-
-.fork-card-bot > ul > li {
-  color: var(--dark-gray);
-  line-height: 1.2rem;
-  font-size: 0.8rem;
-  border-bottom: 1px solid var(--gray);
-  padding: 10px 0;
 }
